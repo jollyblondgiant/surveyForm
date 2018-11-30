@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form method = "POST" action = "/user">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="userNameInput" name = "userName">
+            </div>
+            <div class="form-group">
+                <label for="dojoLocation">Dojo Location:</label>
+                <select class="form-control" id="dojoLocation" name="dojoLocation">
+                    <option>Chicago</option>
+                    <option>New York</option>
+                    <option>Los Angeles</option>
+                    <option>The Shire</option>
+                    <option>Ceres Station</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="faveLang">Favorite Language:</label>
+                <select class="form-control" id="faveLang" name="faveLang">
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>C#</option>
+                    <option>Klingon</option>
+                    <option>Body Language</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="commentArea">Comment (optional):</label>
+                <textarea class="form-control" id="commentArea" rows="3" name="comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </main>
+</body>
+
+</html>
